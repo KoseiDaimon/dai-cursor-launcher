@@ -81,11 +81,11 @@ echo Found Cursor at: %CURSOR_PATH%
 echo.
 
 :: Add to registry
-reg add "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL" /ve /t REG_SZ /d "Cursor „ÅßÈñã„Åè(WSL)" /f
+reg add "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL" /ve /t REG_SZ /d "Cursor Ç≈äJÇ≠(WSL)" /f
 reg add "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL" /v Icon /t REG_SZ /d "%CURSOR_PATH%,0" /f
 reg add "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL\command" /ve /t REG_SZ /d "wsl cursor \"%%V\"" /f
 
-reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL" /ve /t REG_SZ /d "Cursor „ÅßÈñã„Åè(WSL)" /f
+reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL" /ve /t REG_SZ /d "Cursor Ç≈äJÇ≠(WSL)" /f
 reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL" /v Icon /t REG_SZ /d "%CURSOR_PATH%,0" /f
 reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL\command" /ve /t REG_SZ /d "wsl cursor ." /f
 
