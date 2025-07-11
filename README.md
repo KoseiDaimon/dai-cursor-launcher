@@ -9,7 +9,7 @@ Windows エクスプローラーの右クリックメニューに「Cursorで開
 
 ## インストール
 
-1. ファイルをWindowsのフォルダにコピー（例：`C:\CursorRight\`）
+1. ファイルをWindowsのフォルダにコピー（例：`C:\DaiCursorLauncher\`）
 2. `install.bat` をダブルクリック
 3. 管理者権限を許可
 4. 完了！
