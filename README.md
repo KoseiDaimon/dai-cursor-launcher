@@ -1,4 +1,4 @@
-# CursorRight - WSL Context Menu Tool
+# DaiCursorLauncher - WSL Context Menu Tool
 
 Windows エクスプローラーの右クリックメニューに「Cursorで開く（WSL）」を追加するツールです。
 
