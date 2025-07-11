@@ -9,10 +9,11 @@ Windows エクスプローラーの右クリックメニューに「Cursorで開
 
 ## インストール
 
-1. ファイルをWindowsのフォルダにコピー（例：`C:\DaiCursorLauncher\`）
-2. `install.bat` をダブルクリック
-3. 管理者権限を許可
-4. 完了！
+1. [リリースページ](https://github.com/kose-daigoroh/dai-cursor-launcher/releases)からZIPファイルをダウンロード
+2. ZIPファイルを解凍（例：ダウンロードフォルダに解凍）
+3. `install.bat` をダブルクリック
+4. 管理者権限を許可
+5. 完了！
 
 ## 使い方
 
