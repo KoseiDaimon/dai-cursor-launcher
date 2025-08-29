@@ -10,7 +10,6 @@ if %errorLevel% neq 0 (
 echo Uninstalling CursorRight...
 
 :: Remove from registry
-reg delete "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL" /f 2>nul
 reg delete "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL" /f 2>nul
 
 echo.

@@ -49,16 +49,16 @@ if "%CURSOR_PATH%"=="" (
     echo 2. Download and install Cursor
     echo 3. Exit
     echo.
-    
+
     set /p choice="Enter your choice (1-3): "
-    
+
     if "%choice%"=="1" (
         echo.
         echo Please enter the full path to Cursor.exe
         echo Example: C:\Program Files\Cursor\Cursor.exe
         echo.
         set /p CURSOR_PATH="Path: "
-        
+
         if not exist "!CURSOR_PATH!" (
             echo ERROR: File not found at specified path!
             pause
@@ -80,16 +80,12 @@ if "%CURSOR_PATH%"=="" (
 echo Found Cursor at: %CURSOR_PATH%
 echo.
 
-:: Add to registry
-reg add "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL" /ve /t REG_SZ /d "Cursor ‚ÅŠJ‚­(WSL)" /f
-reg add "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL" /v Icon /t REG_SZ /d "%CURSOR_PATH%,0" /f
-reg add "HKEY_CLASSES_ROOT\Directory\shell\CursorWSL\command" /ve /t REG_SZ /d "wsl cursor \"%%V\"" /f
-
-reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL" /ve /t REG_SZ /d "Cursor ‚ÅŠJ‚­(WSL)" /f
+:: Add to registry - directory background only
+reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL" /ve /t REG_SZ /d "Cursor‚ÅŠJ‚­(WSL)" /f
 reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL" /v Icon /t REG_SZ /d "%CURSOR_PATH%,0" /f
 reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\CursorWSL\command" /ve /t REG_SZ /d "wsl cursor ." /f
 
 echo.
 echo Installation complete!
 echo.
-pause
+pause
